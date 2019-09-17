@@ -1,0 +1,11 @@
+[package]
+name = "video_player"
+version = "0.1.0"
+authors = ["Sach97 <sacha.arbonel@hotmail.fr>"]
+edition = "2018"
+
+[dependencies.ffmpeg]
+version = "0.2.0-alpha.1"
+default-features = false # do not include the default features, and optionally
+                         # cherry-pick individual features
+features = ["codec", "format", "filter", "software-resampling", "software-scaling", "resampling" ]
